@@ -1,0 +1,77 @@
+.mailPhoto{
+  background-color: black;
+}
+.gitPhoto{
+  background-color: black;
+}
+/*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #DABDAB;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top{
+   height: 520px;
+   width: 385.13px;
+   border-radius: 10px;
+}
+.bottom{
+    background-color: #DABDAB;
+    border-radius: 10px;
+    opacity: 30%;
+    height: 565px;
+    width: 410px;
+}
+*/
