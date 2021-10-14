@@ -46,6 +46,7 @@ a {
 
 body {
   font-family: "Prata", serif;
+  color: #ffffff;
 }
 
 .container {
@@ -55,7 +56,7 @@ body {
 }
 
 .header {
-  background-color: #dabdab;
+  background-color: #e9c8b3;
   height: 100vh;
 }
 
@@ -65,7 +66,6 @@ body {
 
 .menu {
   padding-top: 34px;
-  color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -82,7 +82,7 @@ body {
 .header__top-line {
   height: 0;
   border: none;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #693b2b;
   margin-top: 16px;
 }
 
@@ -91,46 +91,58 @@ body {
   justify-content: space-between;
 }
 
-.box {
+.header__bottom-right {
   position: relative;
 }
 
-.box__over-img {
+.header__bottom-OverImg {
   height: 520px;
   width: 385px;
   border-radius: 10px;
   position: absolute;
   z-index: 100;
-  margin: 67px 71px 220px 39px;
+  margin: 55px 71px 220px 39px;
 }
 
-.box__under-img {
+.header__bottom-UnderImg {
   width: 410px;
   height: 565px;
   position: absolute;
   z-index: 99;
-  margin: 45px 59px 220px 27px;
+  margin: 33px 59px 220px 27px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+.header__bottom-left {
+  display: inline-block;
+  margin-top: 129px;
+  margin-right: 40px;
+}
+.header__bottom-item {
+  font-size: 65px;
+  line-height: 130px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__bottom-item1 {
+  color: #826767;
+}
 
-.header__bottom-title {
+.aboutMe {
+  color: #000000;
+}
+
+.aboutMe__title {
+  font-size: 50px;
+  line-height: 68px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 40px;
 }
 
-
-/*
-.top{
-   height: 520px;
-   width: 385.13px;
-   border-radius: 10px;
+.aboutMe__text {
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 25px;
 }
-.bottom{
-    background-color: #DABDAB;
-    border-radius: 10px;
-    opacity: 30%;
-    height: 565px;
-    width: 410px;
-}
-*/
