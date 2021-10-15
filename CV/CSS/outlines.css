@@ -227,6 +227,13 @@ body {
   line-height: 41px;
 }
 
+.experience__content-pre {
+  display: inline-block;
+}
+
+.experience__content-rightASCII {
+  text-align: right;
+}
 .success {
   margin-top: 64px;
 }
@@ -279,11 +286,29 @@ body {
 .portfolio__title-line {
   width: 383px;
 }
+
+.portfolio__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__content-title {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.portfolio__content-img {
+  margin-top: 40px;
+}
+
 .fotter {
   background-color: #e9c8b3;
   height: 140px;
   margin-top: 70px;
 }
+
 .footer__title {
   font-size: 16px;
   line-height: 22px;
@@ -296,9 +321,10 @@ body {
   justify-content: space-between;
   font-size: 14px;
   line-height: 19px;
+}
+.footer__contacts{
   padding-top: 15px;
 }
-
 .contacts__list-item + .contacts__list-item {
   margin-top: 15px;
 }
@@ -331,14 +357,12 @@ body {
   left: 0;
 }
 
-.footerMenu__list-item + .footerMenu__list-item{
+
+.footerMenu__list-item:hover {
+  text-decoration: underline;
+  color: #423333;
+}
+
+.footerMenu__list-item + .footerMenu__list-item {
   margin-top: 10px;
 }
-
-
-/*.experience__content-ASCII{
-  display: inline-block;
-}
-.experience__content-ASCII + .experience__content-ASCII{
-  padding-right: 982px;
-}*/
