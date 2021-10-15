@@ -25,6 +25,7 @@ dl,
 dd {
   margin: 0;
 }
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -34,9 +35,6 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
-}
-a:not([class]) {
-  text-decoration-skip-ink: auto;
 }
 
 a {
@@ -249,7 +247,7 @@ body {
   margin-top: 34px;
 }
 
-.success__list-item::before {
+.success__list-item::marker {
   content: "◆";
   color: #ffffff;
 }
@@ -271,7 +269,7 @@ body {
   position: relative;
 }
 
-.failure__list-item::before {
+.failure__list-item::marker {
   content: "◆";
   color: #ffffff;
 }
@@ -293,6 +291,8 @@ body {
 }
 
 .portfolio__content-title {
+  word-spacing: 10px;
+  font-style: italic;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
@@ -322,7 +322,7 @@ body {
   font-size: 14px;
   line-height: 19px;
 }
-.footer__contacts{
+.footer__contacts {
   padding-top: 15px;
 }
 .contacts__list-item + .contacts__list-item {
@@ -337,7 +337,7 @@ body {
 .contacts__list-mail::before {
   content: "";
   position: absolute;
-  background-image: url("/CV/img/mail.svg");
+  background-image: url("../img/mail.svg");
   width: 20px;
   height: 20px;
   left: 0;
@@ -351,12 +351,11 @@ body {
 .contacts__list-git::before {
   content: "";
   position: absolute;
-  background-image: url("/CV/img/github.svg");
+  background-image: url("../img/github.svg");
   width: 20px;
   height: 20px;
   left: 0;
 }
-
 
 .footerMenu__list-item:hover {
   text-decoration: underline;
