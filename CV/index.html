@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="Портфолио">
     <meta name="description" content="Резюме-портфолио о Руй Жанне">
     <link rel="stylesheet" href="CSS/outlines.css">
@@ -22,26 +23,31 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__top">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#header">Главная</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" c href="#section1">Обо мне</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#section2">Опыт</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#section3">Портфолио</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#footer">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <hr class="header__top-line">
+                <div class="header__top-content">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#header">Главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" c href="#section1">Обо мне</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#section2">Опыт</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#section3">Портфолио</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <hr class="header__top-line">
+                </div>
             </div>
             <section class="header__bottom">
                 <div class="header__bottom-left">
@@ -139,7 +145,7 @@
                             </ul>
                         </div>
                     </div>
-                     <div class="experience__line"></div>
+                    <div class="experience__line"></div>
                     <div class="experience__content-right">
                         <div class="experience__content-rightASCII">
                             <h3 class="experience__content-rightTitle">Антиуспехи</h3>
@@ -163,7 +169,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div> 
+                    </div>
                 </div>
         </section>
 
@@ -183,7 +189,6 @@ import numpy as np
 def linan(A, B):
 res = np.linalg.solve(A,B)
 return res
-
 Flist = list(map(np.float32, input().split()))
 Slist = list(map(np.float32, input().split()))
 Farr = np.array(Flist)
