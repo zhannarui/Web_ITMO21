@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device - width">
+    <meta name="keywords" content="Портфолио">
+    <meta name="description" content="Резюме-портфолио о Руй Жанне">
+    <link rel="stylesheet" href="CSS/outlines.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <title>Портфолио</title>
+</head>
+<body>
+    <section class="portfolio" id="section3">
+        <div class="container">
+            <h2 class="title portfolio__title">Портфолио</h2>
+            <hr class="line portfolio__title-line">
+            <div class="portfolio__content">
+                <figure>
+                    <figcaption class="portfolio__content-title">
+                        Snippet кода на языке Python
+                    </figcaption>
+                    <pre>
+            <code>
+import numpy as np
+
+def linan(A, B):
+res = np.linalg.solve(A,B)
+return res
+Flist = list(map(np.float32, input().split()))
+Slist = list(map(np.float32, input().split()))
+Farr = np.array(Flist)
+Sarr = np.array(Slist)
+A = np.array([[Farr[0],Farr[1]], [Sarr [0],Sarr[1]]])
+B = np.array([Farr[2],Sarr[2]])
+print(linan(A, B)[0], linan(A, B)[1])
+            </code>
+        </pre>
+                </figure>
+                <figure>
+                    <figcaption class="portfolio__content-title">
+                        Snippet сверстанного сайта
+                    </figcaption>
+                    <div class="portfolio__content-img">
+                        <img src="img/website.png" alt="сайт">
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
