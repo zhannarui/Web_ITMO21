@@ -48,13 +48,8 @@ hr {
 body {
   font-family: "Prata", serif;
   color: #ffffff;
-  /* display: flex;
-  flex-direction: column; */
+
 }
-/* main{
-  flex-grow: 1;
-  min-height: calc(100vh-90px-112px);
-} */
 
 .container {
   width: 80%;
@@ -291,6 +286,10 @@ body {
   margin-left: 13px;
 }
 
+@media (max-width: 767px) {
+
+}
+
 .aboutMe__quote {
   text-align: center;
   color: #000000;
@@ -442,7 +441,7 @@ body {
   margin-top: 40px;
 }
 .table{
-  background-color: #e9c8b3;
+  color: #000000;
   text-align: center;
   width: 100%;
 }
@@ -452,7 +451,7 @@ body {
   text-transform: uppercase;
 }
 .table__title-line{
-  width: 640px;
+  width: 650px;
 }
 .grid{
   display: grid;
@@ -482,6 +481,7 @@ body {
   justify-content: space-between;
   font-size: 14px;
   line-height: 19px;
+  padding-bottom: 10px;
 }
 .footer__contacts {
   padding-top: 15px;
