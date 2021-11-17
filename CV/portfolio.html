@@ -18,7 +18,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <title>Портфолио</title>
 </head>
-<body>
+<body class="portfolio__body">
+<!-- <header class="portfolio__header" id="header">
+    <div class="container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="../CV/index.html" target="_blank">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"  href="../CV/index.html" target="_blank">Обо мне</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="../CV/index.html" target="_blank">Опыт</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="../CV/portfolio.html" target="_blank">Портфолио</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#footer" target="_blank">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr class="header__top-line">
+    </div>
+    </header> -->
+<main class="portfolio__main">
     <section class="portfolio" id="section3">
         <div class="container">
             <h2 class="title portfolio__title">Портфолио</h2>
@@ -50,12 +78,48 @@ print(linan(A, B)[0], linan(A, B)[1])
                         Snippet сверстанного сайта
                     </figcaption>
                     <div class="portfolio__content-img">
-                        <img src="img/website.png" alt="сайт">
+                        <img class="img" src="img/website.png" alt="сайт">
                     </div>
                 </figure>
+                <div class="popup-img">
+                    <span>&times;</span>
+                    <img src="../CV/img/website.png" alt="сайт">
+                </div>
             </div>
         </div>
     </section>
-</body>
+</main>
 
+<footer class="portfolio__footer">
+    <div class="container">
+        <h2 class="footer__title" id="footer">Контакты</h2>
+        <div class="footer__content">
+            <div class="footer__contacts">
+                <ul class="contacts__list">
+                    <li class="contacts__list-item">
+                        <a class="contacts__list-mail" href="mailto:zhannik2001@gmail.com">zhannik2001@gmail.com</a>
+                    </li>
+                    <li class="contacts__list-item">
+                        <a class="contacts__list-git" href="https://github.com/zhannarui"
+                            target="_blank">zhannarui</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footerMenu__list">
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" href="#header">Главная</a>
+                </li>
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" c href="#section1">Обо мне</a>
+                </li>
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" href="#section2">Опыт</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="../CV/js/popup.js"></script>
+</body>
 </html>
