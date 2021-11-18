@@ -280,6 +280,7 @@ body {
   padding: 10px;
   overflow: hidden;
   cursor: pointer;
+  
 }
 .popup-img{
   position: fixed;
@@ -306,8 +307,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 467px;
-  height: 537px; */
+  width: 467px;
+  height: 537px;
   object-fit: cover;
 }
 @media (max-width: 768px){
@@ -315,7 +316,6 @@ body {
     width: 95%;
   }
 }
-
 .aboutMe__quote {
   text-align: center;
   color: #000000;
@@ -468,6 +468,40 @@ body {
 .portfolio__content-img {
   margin-top: 40px;
   cursor: pointer;
+}
+.portfolio__popup-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, .9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.portfolio__popup-img span{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.portfolio__popup-img img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 467px;
+  height: 537px; */
+  object-fit: cover;
+}
+@media (max-width: 768px){
+  .portfolio__popup-img img{
+    width: 95%;
+  }
 }
 
 .table {
