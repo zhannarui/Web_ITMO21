@@ -276,23 +276,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content:center;
+  justify-content: center;
   padding: 10px;
   overflow: hidden;
   cursor: pointer;
-  
 }
-.popup-img{
+.popup-img {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0, .9);
+  background: rgb(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
   z-index: 100;
   display: none;
 }
-.popup-img span{
+.popup-img span {
   position: absolute;
   top: 0;
   right: 10px;
@@ -302,7 +301,7 @@ body {
   cursor: pointer;
   z-index: 100;
 }
-.popup-img img{
+.popup-img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -311,8 +310,8 @@ body {
   height: 537px;
   object-fit: cover;
 }
-@media (max-width: 768px){
-  .popup-img img{
+@media (max-width: 768px) {
+  .popup-img img {
     width: 95%;
   }
 }
@@ -373,9 +372,34 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
+  .experience__title-line{
+    margin-bottom: 50px;
+
+  }
+  .experience__content-leftTitle{
+    margin: 0 auto;
+  }
+  .experience__content-rightTitle{
+    margin: 0 auto;
+  }
+
   .experience__content-pre {
     display: none;
+  }
+  .experience__line{
+    display: none;
+  }
+  .experience__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .success{
+    margin-bottom: 20px;
+  }
+  .failure{
+    margin-bottom: 50px;
   }
 }
 
@@ -469,17 +493,17 @@ body {
   margin-top: 40px;
   cursor: pointer;
 }
-.portfolio__popup-img{
+.portfolio__popup-img {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0, .9);
+  background: rgb(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
   z-index: 100;
   display: none;
 }
-.portfolio__popup-img span{
+.portfolio__popup-img span {
   position: absolute;
   top: 0;
   right: 10px;
@@ -488,18 +512,17 @@ body {
   color: #fff;
   cursor: pointer;
   z-index: 100;
+  
 }
-.portfolio__popup-img img{
+.portfolio__popup-img img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 467px;
-  height: 537px; */
   object-fit: cover;
 }
-@media (max-width: 768px){
-  .portfolio__popup-img img{
+@media (max-width: 767px) {
+  .portfolio__popup-img img {
     width: 95%;
   }
 }
@@ -630,6 +653,7 @@ body {
 .portfolio__main {
   flex-grow: 1;
   min-height: calc(100vh - 212px);
+  background-color: #693b2b;
 }
 .portfolio__footer {
   background-color: #806161;
