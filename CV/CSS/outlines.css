@@ -49,7 +49,6 @@ body {
   font-family: "Prata", serif;
   color: #ffffff;
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -204,6 +203,7 @@ body {
   }
 }
 
+
 .header__bottom {
   display: flex;
   justify-content: space-between;
@@ -310,7 +310,7 @@ body {
   height: 537px;
   object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .popup-img img {
     width: 95%;
   }
@@ -638,6 +638,7 @@ body {
 .footerMenu__list-item + .footerMenu__list-item {
   margin-top: 10px;
 }
+
 .portfolio__header {
   width: 100%;
   top: 0;
