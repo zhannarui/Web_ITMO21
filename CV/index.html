@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device - width">
+    <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="Портфолио">
     <meta name="description" content="Резюме-портфолио о Руй Жанне">
     <link rel="stylesheet" href="CSS/outlines.css">
@@ -30,23 +30,20 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#header">Главная</a>
+                            <li class="menu__list-item" id="menu__list-item">
+                                <a class="menu__list-link" data-nav="nav" href="../CV/index.html">Главная</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" c href="#section1">Обо мне</a>
+                            <li class="menu__list-item" id="menu__list-item">
+                                <a class="menu__list-link" data-nav="nav" href="../CV/aboutMe.html">Обо мне</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#section2">Опыт</a>
+                            <li class="menu__list-item" id="menu__list-item">
+                                <a class="menu__list-link" data-nav="nav" href="../CV/experience.html">Опыт</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="../CV/portfolio.html" target="_blank">Портфолио</a>
+                            <li class="menu__list-item" id="menu__list-item">
+                                <a class="menu__list-link" data-nav="nav" href="../CV/portfolio.html">Портфолио</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#footer">Контакты</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="../CV/form.html">Form</a>
+                            <li class="menu__list-item" id="menu__list-item">
+                                <a class="menu__list-link" data-nav="nav" href="../CV/form.html">Form</a>
                             </li>
                         </ul>
                     </nav>
@@ -72,7 +69,7 @@
 
     <main>
 
-        <section class="aboutMe" id="section1">
+        <!-- <section class="aboutMe" id="section1">
             <div class="container">
                 <h2 class="title aboutMe__title">Обо мне</h2>
                 <hr class="line aboutMe__title-line">
@@ -111,9 +108,9 @@
                     <span>&times;</span>
                     <img src="img/first.jpg" width="264" height="330" alt="фотоаппарат">
                 </div>
-        </section>
+        </section> -->
 
-        <section class="experience" id="section2">
+        <!-- <section class="experience" id="section2">
             <div class="container">
                 <h2 class="title experience__title">Опыт</h2>
                 <hr class="line experience__title-line">
@@ -179,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </section> -->
 
         <!-- <section class="portfolio" id="section3">
             <div class="container">
@@ -246,6 +243,19 @@ print(linan(A, B)[0], linan(A, B)[1])
                 </div>
             </div>
         </section>
+        <section class="fetch">
+            <div class="container">
+                <div class="fetch__button">
+                    <button id="btn" type="button" class="button">
+                        Сгенерировать картинку
+                    </button>
+                </div>
+                <!-- <div class="preloader">
+                    Loading...
+                  </div> -->
+                <div class="fetch__body" id="CardDiv"></div>
+            </div>
+        </section>
     </main>
 
     <footer class="fotter">
@@ -280,9 +290,9 @@ print(linan(A, B)[0], linan(A, B)[1])
             <div class="loadTime__value" id="LoadTime"></div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/loadTime.js"></script>
-    <script src="../CV/js/popup.js"></script>
+    <script src="../CV/js/script.js"></script>
+    <script src="../CV/js/loadTime.js"></script>
+    <script src="../CV/js/fetch.js"></script>
 </body>
 
 </html>

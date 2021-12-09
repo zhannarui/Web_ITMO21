@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/list.css">
-    <title>TodoList</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>AboutMe</title>
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header">
+        <div class="container">
             <div class="header__top">
                 <div class="header__top-content">
                     <div class="header__burger">
@@ -29,19 +30,19 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item" id="menu__list-item">
+                            <li class="menu__list-item">
                                 <a class="menu__list-link" data-nav="nav" href="../CV/index.html">Главная</a>
                             </li>
-                            <li class="menu__list-item" id="menu__list-item">
+                            <li class="menu__list-item">
                                 <a class="menu__list-link" data-nav="nav" href="../CV/aboutMe.html">Обо мне</a>
                             </li>
-                            <li class="menu__list-item" id="menu__list-item">
+                            <li class="menu__list-item">
                                 <a class="menu__list-link" data-nav="nav" href="../CV/experience.html">Опыт</a>
                             </li>
-                            <li class="menu__list-item" id="menu__list-item">
+                            <li class="menu__list-item">
                                 <a class="menu__list-link" data-nav="nav" href="../CV/portfolio.html">Портфолио</a>
                             </li>
-                            <li class="menu__list-item" id="menu__list-item">
+                            <li class="menu__list-item">
                                 <a class="menu__list-link" data-nav="nav" href="../CV/form.html">Form</a>
                             </li>
                         </ul>
@@ -49,28 +50,49 @@
                     <hr class="header__top-line">
                 </div>
             </div>
-        <h1>Задачи на день</h1>
-        <form id="new-task-form">
-            <input type="text" id="new-task-input" placeholder="Чем-нибудь займемся сегодня?">
-            <input type="submit" value="Добавить задачу" id="new-task-submit">
-        </form>
+        </div>
     </header>
     <main>
-        <section class="task-list">
-            <h2>Задачи</h2>
-            <div id="tasks">
-                <!-- <div class="task">
-                    <div class="content">
-                        <input type="text" class="text" value="Мои задачи" readonly>
+        <section class="aboutMe" id="section1">
+            <div class="container">
+                <h2 class="title aboutMe__title">Обо мне</h2>
+                <hr class="line aboutMe__title-line">
+                <p class="aboutMe__text">
+                    Ученица 3 курса университета Итмо. В свободное от учебы время осваиваю дизайн и верстку сайтов,
+                    занимаюсь спортом, фотографирую.
+                </p>
+                <div class="aboutMe__galery">
+                    <div class="aboutMe__galery-item">
+                        <img src="img/first.jpg" width="264" height="330" alt="фотоаппарат">
                     </div>
-                    <div class="actions">
-                        <button class="edit">Изменить</button>
-                        <button class="delete">Удалить</button>
+                    <div class="aboutMe__galery-item">
+                        <img src="img/second.jpg" width="273" height="330" alt="компьютер">
                     </div>
-                </div> -->
-            </div>
+                    <div class="aboutMe__galery-item">
+                        <img src="img/third.jpg" width="248" height="330" alt="готовка">
+                    </div>
+                </div>
+                <blockquote class="aboutMe__quote">
+                    <p class="aboutMe__quote-text">“Если я не возьму полную ответственность за свою жизнь, ничего
+                        никогда не изменится”</p>
+                    <cite class="aboutMe__quote-author">Анастасия Свон.</cite>
+                </blockquote>
+                <div class="aboutMe__galery">
+                    <div class="aboutMe__galery-item">
+                        <img src="img/fourth.jpg" width="233" height="330" alt="путешествие">
+                    </div>
+                    <div class="aboutMe__galery-item">
+                        <img src="img/fifth.jpg" width="220" height="330" alt="путешествие">
+                    </div>
+                    <div class="aboutMe__galery-item">
+                        <img src="img/sixth.jpg" width="221.39" height="330" alt="путешествие">
+                    </div>
+                </div>
+                <div class="popup-img">
+                    <span>&times;</span>
+                    <img src="img/first.jpg" width="264" height="330" alt="фотоаппарат">
+                </div>
         </section>
-  
     </main>
     <footer class="fotter">
         <div class="container">
@@ -104,8 +126,9 @@
             <div class="loadTime__value" id="LoadTime"></div>
         </div>
     </footer>
-    <script src="../CV/js/list.js"></script>
-    <script src="../CV/js/loadTime.js"></script>
-   <script src="../CV/js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loadTime.js"></script>
+    <script src="../CV/js/popup.js"></script>
 </body>
+
 </html>

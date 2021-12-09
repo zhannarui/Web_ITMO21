@@ -4,3 +4,11 @@ $(document).ready(function(){
         $('body').toggleClass('lock')
     });
 });
+
+window.onload = function(){
+    document.querySelectorAll("[data-nav]").forEach(function(element){
+        if(element.href === document.location.href){
+            element.classList.add("active-menu");
+        }
+    })
+}

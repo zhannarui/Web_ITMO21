@@ -59,4 +59,16 @@ window.addEventListener('load',() =>{
             list_el.removeChild(task_el);
         });
     });
+    input.onClick = () =>{
+        let userData = form.value;
+        let getLocalStorage = localStorage.getItem("New Todo");
+         if(getLocalStorage == null){
+             listArr = [];
+         } else{
+             listArr = JSON.parse(getLocalStorage);
+         }
+         listArr.push(userData);
+         localStorage.setItem("New Todo", JSON.stringify(listArr));
+    }
 });
+

@@ -26,6 +26,11 @@ dd {
   margin: 0;
 }
 
+/* header{
+  position: fixed;
+} */
+
+
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -35,7 +40,6 @@ body {
 body {
   display: block;
   flex-direction: column;
-  min-height: 100vh;
   background: rgb(30, 22, 42);
 }
 header {
@@ -156,4 +160,9 @@ main {
 .task .actions .delete{
     border-radius: 1rem;
     background-color:rgb(190, 147, 168);
+}
+
+main{
+  flex-grow: 1;
+  min-height: calc(100vh - 236px);
 }
