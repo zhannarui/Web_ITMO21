@@ -2,13 +2,11 @@ window.addEventListener('load',() =>{
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
     const list_el = document.querySelector('#tasks');
+    const btn = document.querySelector('#new-task-submit');
     form.addEventListener('submit', (e) =>{
         e.preventDefault();
         const task = input.value;
-        if(!task){
-            alert("Пожалусйта, введите задачу/задачи на сегодня");
-            return;
-        } 
+    
         const task_el = document.createElement("div");
         task_el.classList.add("task");
 
@@ -59,8 +57,10 @@ window.addEventListener('load',() =>{
             list_el.removeChild(task_el);
         });
     });
-    input.onClick = () =>{
-        let userData = form.value;
+// console.log(btn.value);
+// localStorage.clear();
+    btn.onclick = function(){
+        let userData = input.value;
         let getLocalStorage = localStorage.getItem("New Todo");
          if(getLocalStorage == null){
              listArr = [];
@@ -69,6 +69,15 @@ window.addEventListener('load',() =>{
          }
          listArr.push(userData);
          localStorage.setItem("New Todo", JSON.stringify(listArr));
+    };
+    function get(){
+        var storageValues = JSON.parse(localStorage.getItem("New Todo"));
+        if (storageValues){
+        var test = form.value;
+        storageValues = test;
+        console.log(storageValues);
+        }
     }
+    // get();
 });
 

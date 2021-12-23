@@ -28,7 +28,7 @@ dd {
 
 body {
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  /* text-rendering: optimizeSpeed; */
   line-height: 1.5;
 }
 ul[class],
@@ -593,7 +593,6 @@ color: black;
 padding: 5px;
 }
 .fetch__button{
-  text-align: center;
   padding-top: 40px;
 }
 .card-img{
@@ -609,7 +608,16 @@ padding: 10px;
 .card-body{
   font-size: 20px;
 }
-
+.preloader-img{
+  width: 100px;
+  height: 100px;
+}
+.fetch-container{
+  text-align: center;
+}
+#preloader{
+  visibility: hidden;
+}
 button {
   padding: 0;
   border: none;
@@ -618,20 +626,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-/* .preloader {
-  background-color: rgba(0, 0, 0, .7);
-  color: #fff;
-  display: none;
-  left: 0;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.preloader.active {
-  display: block;
-} */
 
 .fotter {
   background-color: #806161;
@@ -707,5 +701,6 @@ button {
   color: #000000;
   border-radius: 5px;
 }
+
 
 
