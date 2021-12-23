@@ -1,9 +1,11 @@
 var btn = document.getElementById("btn").addEventListener('click',getPost);
-var con = 0;
+let con = 1;
 var div = document.getElementById("CardDiv");
 
 function getPost(){
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    var preloader = document.getElementById("preloader");
+    preloader.style.visibility = "visible";
+    fetch('https://jsonplaceholder.typicode.com/photos/' + con)
     .then((response)=>{
         if(response.ok){
             return response.json();
@@ -13,24 +15,27 @@ function getPost(){
        
     })
     .then((post)=>{
-        for(let index = 0; index < 1; index++){
+       
            div.innerHTML +=`
            <div class = "card">
-           <img class="card-img" src="${post[con].thumbnailUrl}">
+           <img class="card-img" src="${post.thumbnailUrl}">
            <div class="card-body">
-           <h5 class="card-title">${post[con].id}</h5>
-           <p class="card-text">${post[con].title}</p>
+           <h5 class="card-title">${post.id}</h5>
+           <p class="card-text">${post.title}</p>
            </div>
            </div>
            `
-           con = con+1;
-        }
+           con = con + 1;
+           preloader.style.visibility = "hidden";
+
     })
     .catch((error)=>{
         document.getElementById('CardDiv').innerHTML = '<div class="container"><p>⚠ Что-то пошло не так</p></div>';
         console.log("Error: " + error);
-    });
+        preloader.style.visibility = "hidden";
 
+    });
+    
 }
 
 // function sleep(ms) {
