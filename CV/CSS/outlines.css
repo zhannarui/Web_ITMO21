@@ -702,5 +702,7 @@ button {
   border-radius: 5px;
 }
 
-
+#error {
+  visibility: "hidden";
+}
 
