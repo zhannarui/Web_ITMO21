@@ -4,6 +4,8 @@ var div = document.getElementById("CardDiv");
 
 function getPost(){
     var preloader = document.getElementById("preloader");
+    var errormsg = document.getElementById("error")
+    errormsg.textContent = "";
     preloader.style.visibility = "visible";
     fetch('https://jsonplaceholder.typicode.com/photos/' + con)
     .then((response)=>{
@@ -15,7 +17,7 @@ function getPost(){
        
     })
     .then((post)=>{
-       
+     
            div.innerHTML +=`
            <div class = "card">
            <img class="card-img" src="${post.thumbnailUrl}">
@@ -30,7 +32,8 @@ function getPost(){
 
     })
     .catch((error)=>{
-        document.getElementById('CardDiv').innerHTML = '<div class="container"><p>⚠ Что-то пошло не так</p></div>';
+        //document.getElementById('CardDiv').innerHTML = '<div class="container"><p>⚠ Что-то пошло не так</p></div>';
+        errormsg.textContent = error
         console.log("Error: " + error);
         preloader.style.visibility = "hidden";
 
